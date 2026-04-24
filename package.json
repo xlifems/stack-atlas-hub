@@ -1,0 +1,30 @@
+{
+  "name": "stack-atlas-hub",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prebuild": "tsx scripts/extract-resources.ts",
+    "pregenerate": "tsx scripts/extract-resources.ts",
+    "extract": "tsx scripts/extract-resources.ts"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@types/node": "^20.16.0",
+    "nuxt": "^3.13.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.4",
+    "vue": "^3.5.11",
+    "vue-router": "^4.4.5"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "slugify": "^1.6.6"
+  }
+}
